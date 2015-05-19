@@ -8,6 +8,14 @@
     <link type="text/css" rel="stylesheet" 
 	  href="http://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
     <style type="text/css">
+      
+      /* Large desktop */
+      @media (min-width: 980px) {
+       body {
+        padding-top: 60px;
+       }
+      }
+
       body {
         padding-top: 20px;
         padding-bottom: 40px;
@@ -41,6 +49,34 @@
     </style>
   </head>
   <body>
+
+    <!-- Mobile-friendly navbar adapted from example. -->
+    <!-- http://twitter.github.io/bootstrap/examples/start-template.html -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+	<div class="container">
+	  <button type="button" class="btn btn-navbar"
+		  data-toggle="collapse" data-target=".nav-collopse">
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon=bar"></span>
+	  </button>
+	  <a class="brand" href="#">Bitstarter</a>
+	  <div class="nav-collapse collapse">
+	    <ul class="nav">
+	      <li class="active"><a href="#">Home</a></li>
+	      <li><a href="#about">About</a></li>
+	      <li><a href="#contact">Contact</a></li>
+	    </ul>
+	  </div><!--/.nav-collapse -->
+	</div>
+      </div>
+    </div>
+
+    
+
+
+
     <div class="container">
       <div class="row navigation">
 	<div class="span2 logo">
