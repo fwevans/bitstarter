@@ -13,15 +13,15 @@
       
       /* Large desktop */
       @media (min-width: 980px) {
-       body {
-        padding-top: 60px;
-       }
-       .linediv-l {
-        border-right: 1px white solid;
-       }
-       .linediv-r {
-        border-left: 1px white solid;
-       }
+        body {
+          padding-top: 60px;
+        }
+        .linediv-l {
+          border-right: 1px white solid;
+        }
+        .linediv-r {
+          border-left: 1px white solid;
+        }
       }
 
       /* Landscape phones and down */
@@ -68,23 +68,33 @@
         background-color: #343434;
         padding: 3% 0%;
       }
-      .video, .thermometer, .order, .social {
-        border: 1px dotted;
+      .video, .thermometer, .order, .social, .statistics {
         text-align: center;
       }
-      .video {
-        /* Internal borders have 1px width, thus need to add 4 x 1px x 120px. */
-        height: 124px;
-        line-height: 124px;
+      .statistics h3, .statistics p {
+        color: white;
       }
-      .thermometer, .order, .social {
-        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-        height: 40px; 
-        line-height: 40px;
+      
+      /* Marketing Copy and Footer */
+      .copy {
+        padding-top: 2.5%;
+        padding-botton: 2.5%;
+        text-align: justify;
       }
-      div.row {
-        border: 1px solid;
+      .asset {
+        padding: 2.5% 0%;
       }
+      .footer {
+        color: #cccccc;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 11px;
+      }
+      .footer a {
+        color: #ccccff;
+      }
+
     </style>
   </head>
   <body>
@@ -182,20 +192,33 @@
 	</div>
       </div>
 
+      <!-- Marketing copy begins -->
+      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+      <!-- http://placehold.it -->
 
-
-
-
-      <div class="row section1">
-	<div class="span12">
-	  Marketing Section 1
+      <div class="row-fluid section1">
+	<div class="span5 offset1 asset">
+	  <img class="img-polaroid" src="http://placehold.it/480x300">
+	</div>
+	<div class="span5 copy">
+	  <p>
+	    Loren ipsum dolor. This is marketing copy explaining some such thing with examples and many compelling reasons to believe. This is marketing copy explaining some such thing with examples and many compelling reasons to believe. This is marketing copy explaining some such thing with examples and many compelling reasons to believe.
+	  </p>
 	</div>
       </div>
-      <div class="row section2">
-	<div class="span12">
-	  Marketing Section 2
+
+      <div class="row-fluid section2">
+	<div class="span5 offset1 copy copy-right">
+	  <p>
+	    Loren ipsum dolor. This is marketing copy explaining some such thing with examples and many compelling reasons to believe. This is marketing copy explaining some such thing with examples and many compelling reasons to believe. This is marketing copy explaining some such thing with examples and many compelling reasons to believe.
+	  </p>
+	</div>
+	<div class="span5 asset">
+	  <img class="img-polaroid" src="http://placehold.it/480x300">
 	</div>
       </div>
+
       <div class="row faq">
 	<div class="span12">
 	  FAQ
